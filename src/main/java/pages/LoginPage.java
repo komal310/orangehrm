@@ -15,6 +15,8 @@ public class LoginPage {
 	@FindBy(name="Submit")
 	WebElement loginBtn;
 	
+	@FindBy(name="Submit1")
+	WebElement loginBtn1;
 	
 	public LoginPage(WebDriver driver)
 	{
