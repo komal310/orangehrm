@@ -8,7 +8,10 @@ public class LoginPage {
 	
 	@FindBy(id="txtUsername")
 	WebElement userName;
-	
+
+	@FindBy(id="txtUsername")
+	WebElement userName1;
+
 	@FindBy(id="txtPassword")
 	WebElement password;
 	
@@ -16,6 +19,7 @@ public class LoginPage {
 	WebElement loginBtn;
 	
 	@FindBy(name="Submit1")
+
 	WebElement loginBtn1;
 	
 	public LoginPage(WebDriver driver)
