@@ -1,3 +1,4 @@
+@E2E
 Feature: To verify login page is working or not
 
 Scenario Outline:  login with valid username & password
