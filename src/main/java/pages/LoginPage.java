@@ -7,10 +7,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-public class LoginPage 
-{
+public class LoginPage {
 	
-	
+
 	@FindBy(xpath="//input[@id='txtUsername']")
 	static
 	WebElement userName;
@@ -37,33 +36,33 @@ public class LoginPage
 		System.out.println(userName);
 	}
 	
-	
+
 	public void populateUserName(String uname)
 	{
 
-	
+
 		userName.sendKeys(uname);
 
 	}
-	public static void populatePassword(String pass) 
+	public static void populatePassword(String pass)
 	{
 
 		password.sendKeys(pass);
 
 	}
-	public static void clickOnLogin() 
+	public static void clickOnLogin()
 	{
 
 		loginBtn.click();
 	
 
 	}
-	
-	
-	public void refreshLogin(WebDriver driver) 
+
+
+	public void refreshLogin(WebDriver driver)
 	{
 		driver.navigate().back();
-	
+
 	}
 	public void verifyError(String exp)
 	{
